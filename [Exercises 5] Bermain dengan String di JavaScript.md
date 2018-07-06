@@ -1,4 +1,12 @@
 
+# [Exercises 5] Bermain dengan String di JavaScript
+ 
+ ## String
+
+#### 1. Let's Form a Sentence
+
+
+```javascript
 var word1 = "JavaScript ";
 var second = "is ";
 var third = "awesome ";
@@ -9,7 +17,15 @@ var seventh = "it! ";
 
 console.log(word1+second+third+fourth+fifth+sixth+seventh);
 
+```
 
+    JavaScript is awesome and I love it! 
+
+
+#### 2. Index Accessing - 1 by 1
+
+
+```javascript
 var word2 = "wow JavaScript is so cool";
 var exampleFirstWord = word2[0] + word2[1] + word2[2];
 var secondWord = word2[4]+word2[5]+word2[6]+word2[7]+word2[8]+word2[9]+word2[10]+word2[11]+word2[12]+word2[13];
@@ -22,7 +38,19 @@ console.log("Second Word: " + secondWord);
 console.log("Third Word: " + thirdWord);
 console.log("Fourth Word: " + fourthWord);
 console.log("Fifth Word: " + fifthWord);
+```
 
+    First Word: wow
+    Second Word: JavaScript
+    Third Word: is
+    Fourth Word: so
+    Fifth Word: cool
+
+
+#### 3. Breaking Sentence (Again) using Substring
+
+
+```javascript
 var word3 = "wow JavaScript is so cool";
 var exampleFirstWord3 = word3.substring(0, 3);
 var secondWord3 = word3.substring(4, 14);
@@ -35,7 +63,19 @@ console.log("Second Word: "+ secondWord3);
 console.log("Third Word: " + thirdWord3);
 console.log("Fourth Word: " + fourthWord3);
 console.log("Fifth Word: " + fifthWord3);
+```
 
+    First Word: wow
+    Second Word: JavaScript
+    Third Word: is
+    Fourth Word: so
+    Fifth Word: cool
+
+
+#### 4. Breaking Sentence (yet Again) and Count Each Length
+
+
+```javascript
 var word4 = "wow JavaScript is so cool";
 var exampleFirstWord4 = word4.substring(0, 3);
 var secondWord4 = word4.substring(4, 14);
@@ -54,3 +94,11 @@ console.log("Second Word: "+ secondWord4 + ", with length: "+ secondWordLength);
 console.log("Third Word: " + thirdWord4 + ", with length: "+ thirdWordLength);
 console.log("Fourth Word: " + fourthWord4 + ", with length: "+ fourthWordLength);
 console.log("Fifth Word: " + fifthWord4 + ", with length: "+ fifthWordLength);
+```
+
+    First Word: wow, with length: 3
+    Second Word: JavaScript, with length: 10
+    Third Word: is, with length: 2
+    Fourth Word: so, with length: 2
+    Fifth Word: cool, with length: 4
+
